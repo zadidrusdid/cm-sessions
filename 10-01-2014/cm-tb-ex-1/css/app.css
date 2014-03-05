@@ -1,0 +1,36 @@
+﻿/*.container{
+	background-color:red;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:700italic);
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background: #ddd;
+}
+
+
+#menu {
+  float: right;
+}
+
+  #menu ul {
+    list-style: none;
+  }
+
+    #menu ul li {
+      display: inline;
+      margin: 0 4px;
+    }
+
+#logo a {
+  font-size: 60px;
+  font-family: 'Vollkorn', serif;
+  text-decoration: none;
+  color: #c14d00;
+  font-style: italic;
+}
+*/

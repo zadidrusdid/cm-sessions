@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title> Box Sizing</title>
+<style>
+
+div{
+	width:200px;
+	border:5px solid #0066CC;
+	padding:10px;
+	
+}
+
+.contentbox{
+	-webkit-box-sizing:content-box;
+}
+
+.borderbox{
+	box-sizing:border-box;
+}
+
+</style>
+</head>
+
+<body>
+	<div class="contentbox">div1: </div>
+	<div class="borderbox">div2: </div>
+</body>
+</html>

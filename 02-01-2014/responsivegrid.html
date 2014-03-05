@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Responsive Grid Layout</title>
+<style>
+/*  SECTIONS  */
+.row {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	float:left;
+}
+/* .col:first-child { margin-left: 0; } */
+
+
+/*  GROUPING  
+.group:before,
+.group:after {
+	content:"";
+	display:block;
+}
+.group:after {
+	clear:both;
+}
+*/
+
+/*  GRID OF THREE  
+.span_4_of_4 {
+	width: 100%;
+}
+
+.span_3_of_4 {
+	width: 75%;
+}*/
+.span_2_of_4 {
+	width: 50%;
+}
+
+.span_1_of_4 {
+	width: 25%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+/*	
+.span_4_of_4 {
+	width: 100%;
+}
+
+.span_3_of_4 {
+	width: 100%;
+}
+*/
+.span_2_of_4 {
+	width: 100%;
+}
+.span_1_of_4 {
+	width: 100%;
+}
+}
+
+</style>
+</head>
+
+<body>
+	<div class="row">
+	
+		<div class="col span_2_of_4">
+			This is column 1
+		</div>
+		
+		<div class="col span_2_of_4">
+			This is column 2
+		</div>
+
+		
+	</div>
+	
+	<div class="row">
+	
+
+		
+	</div>
+</body>
+</html>

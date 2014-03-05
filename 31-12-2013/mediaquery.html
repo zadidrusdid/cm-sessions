@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Media Query</title>
+<style>
+@media only screen and (max-width:400px){
+	
+	body{
+		background-color:#CCFFFF;
+	}
+	
+	ul li{
+		list-style-type:none;
+		border:1px solid #990000;
+		margin:1px;
+		width:150px;
+	}
+	
+	div::after{
+		content:attr(data-mob);
+	}
+	
+}
+
+@media only screen and (min-width:401px) and (max-width:800px){
+	
+	body{
+		background-color:#FFFFFF;
+	}
+	
+	ul li{
+		list-style-type:none;
+		border:1px solid #990000;
+		margin:1px;
+		width:150px;
+		display:inline;
+	}
+	
+		div::after{
+		content:attr(data-tab);
+	}
+
+	
+}
+
+@media only screen and (min-width:801px){
+	
+	body{
+		background-color:#FFCCFF;
+	}
+
+		div::after{
+		content:attr(data-pc);
+	}
+}
+
+
+</style>
+</head>
+
+<body>
+<div data-mob="I am on mobile" data-tab="I am on tablet" data-pc="I am on pc">
+<ul>
+	<li>this is li 1 </li>
+	<li>this is li 1 </li>
+	<li>this is li 1 </li>
+	<li>this is li 1 </li>
+	<li>this is li 1 </li>
+	<li>this is li 1 </li>
+</ul>
+
+</div>
+
+
+</body>
+</html>
