@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap Training Practice</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.1.1/css/bootstrap.css" />
+		
+	</head>
+	<body>
+		
+		<div class="container">
+
+			<div class="col-md-12">
+				
+				
+					<div id="myAccordion" class="panel-group">
+				
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title"><a href="#item1" data-toggle="collapse" data-parent=".panel-group">Item 1</a></div>
+						</div>
+						<div id="item1" class="collapse in">
+							<div class="panel-body">
+								contetn goes here for Item 1
+							</div>
+						</div>
+					</div>
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title"><a href="#item2" data-toggle="collapse" data-parent=".panel-group">Item 2</a></div>
+						</div>
+						<div id="item2" class="collapse">
+							<div class="panel-body">
+								contetn goes here for Item 2
+							</div>
+						</div>
+					</div>
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title"><a href="#item3" data-toggle="collapse" data-parent=".panel-group">Item 3</a></div>
+						</div>
+						<div id="item3" class="collapse">
+							<div class="panel-body">
+								contetn goes here for Item 3
+							</div>
+						</div>
+					</div>
+				</div>
+
+					<div id="myAccordion2" class="panel-group">
+				
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title"><a href="#item1" data-toggle="collapse" data-parent="#myAccordion2">Item 1</a></div>
+						</div>
+						<div id="item1" class="collapse in">
+							<div class="panel-body">
+								contetn goes here for Item 1
+							</div>
+						</div>
+					</div>
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title"><a href="#item2" data-toggle="collapse" data-parent="#myAccordion2">Item 2</a></div>
+						</div>
+						<div id="item2" class="collapse">
+							<div class="panel-body">
+								contetn goes here for Item 2
+							</div>
+						</div>
+					</div>
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title"><a href="#item3" data-toggle="collapse" data-parent="#myAccordion2">Item 3</a></div>
+						</div>
+						<div id="item3" class="collapse">
+							<div class="panel-body">
+								contetn goes here for Item 3
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+		</div>	
+		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script src="bootstrap-3.1.1/js/bootstrap.js"></script>
+		<script>
+			(function(){
+				$('#btnTooltip').tooltip({
+					placement:'bottom',
+					delay:{
+						show:500,
+						hide:50
+					}
+				});
+				
+				$('#btnTooltip').bind('click',function(){
+					$('#myAlert').show();
+				});
+				
+				$('#myAlert').on('close.bs.alert', function(e){
+					$('#myAlert').hide();
+					//e.preventDefault();
+				});
+				
+				
+			})();
+		</script>
+		
+	</body>
+</html>

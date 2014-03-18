@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cat World</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/amelia-bootstrap.min.css">
+  <link href="css/app.css" rel="stylesheet" />
+</head>
+<body>
+	
+		
+    <header class="container">
+        <section id="menu" class="navbar navbar-default">
+        	<div class="navbar-header">
+                <button class="btn btn-success btn-xs navbar-toggle"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"><span class="glyphicon glyphicon-chevron-down"></span></button>
+                <div id="logo">
+                    <a href='.'><h1>My Cat World</h1></a>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav active"><a href=".">Home</a></li>
+                <li class="nav"><a href="about.html">About</a></li>
+                <li class="nav"><a href="contact.html">Contact</a></li>
+            </ul>
+            </div>
+         </section>
+    </header> 
+
+
+	<div id="mainContent" class="container">
+		
+		<div class="page-header">
+			<ul class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>		
+			<h1>Contact Us</h1>
+		</div>
+		
+			<form class="form-horizontal">
+				
+				<div class="form-group">
+					<label for="fullName" class="col-md-2 control-label">Full Name</label>					
+					<div class="col-md-10">
+						<input type="text"
+								name="fullName"
+								id="fullName"
+								placeholder="e.g. Code Mate .."
+								class="form-control" />
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="email" class="col-md-2 control-label">Email</label>
+					<div class="col-md-10">
+					<input type="text"
+							name="email"
+							id="email"
+							placeholder="e.g. codemate@bangladesh.com" 
+							class="form-control"
+							/>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="email" class="col-md-2 control-label">Favorite</label>
+					<div class="col-md-10">
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-success active"><input type="checkbox" />Option A</label>
+							<label class="btn btn-success"><input type="checkbox" />Option B</label>
+							<label class="btn btn-success"><input type="checkbox" />Option C</label>
+						</div>
+					</div>
+				</div>
+				
+				<div class="dropdown">
+					<button  class="btn btn-success" type="button" data-toggle="dropdown">Show Me</button>
+					
+					<ul class="dropdown-menu" >
+						<li><a href="#">Link A</a></li>
+						<li><a href="#">Link B</a></li>
+						<li><a href="#">Link C</a></li>
+						<li class="divider"><a href="#"></a></li>
+						<li class="disabled"><a href="#" >Link D</a></li>
+					</ul>
+				</div>
+				
+				
+				<div class="form-group">
+					<label for="idSelect" class="col-md-2 control-label">Select</label>
+					<div class="col-md-10">
+						<select id="idSelect" class="form-control">
+							<option>A</option>
+							<option>B</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-md-10 col-md-offset-2">
+						<div class="checkbox-inline">
+							<label >
+								<input type="checkbox" /> A checkbox
+							</label>
+						</div>
+						<div class="checkbox-inline">
+							<label>
+								<input type="checkbox" /> A checkbox
+							</label>
+						</div>
+						
+					</div>
+				</div>
+				
+				
+				<div class="form-group">
+				
+					<div class="col-md-offset-2 col-md-10">
+						<input type="submit" 
+							  value="Click Me" 
+							  class="btn btn-success" />
+					</div>
+				</div>
+			
+			</form>
+		
+		<hr />
+	</div>
+	
+    <footer class="container">
+      <p>Text placeholders courtesy of <a href="http://www.test.com/">Test Ipsum</a>.</p>
+    </footer>
+
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

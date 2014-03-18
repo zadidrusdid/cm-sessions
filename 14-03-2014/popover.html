@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap Training 14-03-2014</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.1.1/css/bootstrap.css" />
+		
+	</head>
+	<body>
+		
+		<div class="container">
+			<div class="col-md-12">
+				&nbsp;
+			</div>
+			<div class="col-md-12">
+				<a href="#" id="pop1" type="button" class="btn btn-default" 
+				data-container="body" 
+                data-placement="auto" 
+				data-toggle="popover" 
+				data-html="true"
+				data-title="Title for popover"
+                data-content="content for <a href='#'>popover content for </a>popover content for popovercontent for popover content for popover content for popover"
+				>
+  Popover on bottom
+</a>
+				
+			</div>		
+		</div>	
+		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script src="bootstrap-3.1.1/js/bootstrap.js"></script>
+		<script>
+			$('#pop1').popover();
+			$('#pop1').on('show.bs.popover', function () {
+				console.log('show');
+				alert('show');
+			});
+			$('#pop1').on('shown.bs.popover', function () {
+				console.log('shown');
+				alert('shown');
+			});
+			$('#pop1').on('hide.bs.popover', function () {
+				console.log('hide');
+				alert('hide');
+			});
+			$('#pop1').on('hidden.bs.popover', function () {
+				console.log('hidden');
+				alert('hidden');
+			});
+
+
+		</script>
+		
+	</body>
+</html>
